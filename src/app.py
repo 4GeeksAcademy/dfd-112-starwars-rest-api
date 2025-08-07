@@ -10,9 +10,18 @@ from utils import APIException, generate_sitemap
 from admin import setup_admin
 from models import db, User
 
-from tables import db, User, People, Planet, Vehicle, FavoritePeople, FavoritePlanets, FavoriteVehicles
+from models import db, User, People, Planet, Vehicle, FavoritePeople, FavoritePlanets, FavoriteVehicles
 from sqlalchemy.exc import SQLAlchemyError, IntegrityError
-from logging import logger
+
+
+######################################
+# Configure logging
+
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+######################################
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
