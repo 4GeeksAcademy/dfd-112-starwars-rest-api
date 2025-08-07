@@ -226,6 +226,20 @@ def get_one_person(people_id):
 ############################################
 #######         Add one PERSON       #######
 ############################################
+""" JSON example
+{
+    "name": "Darth Vader",
+    "birth_year": "41.9BBY",
+    "eye_color": "yellow",
+    "gender": "male", 
+    "hair_color": "none",
+    "height": "202",
+    "mass": "136",
+    "skin_color": "white",
+    "homeworld": "Tatooine",
+    "url": "https://swapi.dev/api/people/4/"
+}
+"""
 @app.route('/people', methods=['POST'])
 def add_person():
 
@@ -488,6 +502,20 @@ def get_one_planet(planet_id):
 ############################################
 #######     Add one PLANET     #######
 ############################################
+""" JSON example
+{
+    "name": "Tatooine",
+    "diameter": "10465",
+    "rotation_period": "23",
+    "orbital_period": "304",
+    "gravity": "1 standard",
+    "population": "200000",
+    "climate": "arid",
+    "terrain": "desert",
+    "surface_water": "1",
+    "url": "https://swapi.dev/api/planets/1/"
+}
+"""
 @app.route('/planets', methods=['POST'])
 def add_planet():
 
@@ -751,6 +779,22 @@ def get_one_vehicle(vehicle_id):
 ############################################
 #######        Add one VEHICLE       #######
 ############################################
+""" JSON example
+{
+    "name": "Sand Crawler",
+    "model": "Digger Crawler",
+    "vehicle_class": "wheeled",
+    "manufacturer": "Corellia Mining Corporation",
+    "length": "36.8",
+    "cost_in_credits": "150000",
+    "crew": "46",
+    "passengers": "30",
+    "max_atmos_speed": "30",
+    "cargo_capacity": "50000",
+    "consumables": "2 months",
+    "url": "https://swapi.dev/api/vehicles/4/"
+}
+"""
 @app.route('/vehicles', methods=['POST'])
 def add_vehicle():
 
@@ -943,6 +987,15 @@ def delete_vehicle(vehicle_id):
 #########################################################################################
 #########################################################################################
 
+""" JSON example
+{
+    "email": "luke@jedi.com",
+    "username": "luke_skywalker",
+    "name": "Luke Skywalker",
+    "password": "force123",
+    "is_active": true
+}
+"""
 
 ############################################
 #######    Get list of ALL USERS     #######
