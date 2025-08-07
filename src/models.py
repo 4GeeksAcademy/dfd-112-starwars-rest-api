@@ -17,14 +17,13 @@ from datetime import datetime, timezone
 """
 TO-DOs:
 
-[x] Create tables for STAR WARS Database Model:
+[x] Create all tables for STAR WARS Database Model
 
-Create user and category tables:
+User and category tables:
     [x] User
     [x] People
     [x] Planet
     [x] Vehicle
-
 
 Create Favorite handling tables:
     [x] People  favorites
